@@ -1,3 +1,11 @@
+This was forked from:
+ https://github.com/alevchuk/pairwise-alignment-in-python
+
+and modified to read an INI input file so that it will work with SPC
+https://github.com/whbrewer/spc
+
+--
+
 Pairwise string alignment in Python.
 
 My contribution will be:
