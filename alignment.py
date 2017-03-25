@@ -12,9 +12,9 @@ def zeros(shape):
             retval[-1].append(0)
     return retval
 
-match_award      = 10
-mismatch_penalty = -5
-gap_penalty      = -5 # both for opening and extanding
+#match_award      = 10
+#mismatch_penalty = -5
+#gap_penalty      = -5 # both for opening and extanding
 
 def match_score(alpha, beta):
     if alpha == beta:
@@ -30,7 +30,7 @@ def finalize(align1, align2):
     
     i,j = 0,0
     
-    #calcuate identity, score and aligned sequeces
+    #calculate identity, score and aligned sequeces
     symbol = ''
     found = 0
     score = 0
@@ -55,6 +55,10 @@ def finalize(align1, align2):
     
     identity = float(identity) / len(align1) * 100
     
+    #print match_award
+    #print mismatch_penalty
+    #print gap_penalty
+
     print 'Identity =', "%3.3f" % identity, 'percent'
     print 'Score =', score
     print align1
