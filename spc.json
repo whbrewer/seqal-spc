@@ -1,0 +1,14 @@
+{
+   "category": "", 
+   "name": "seqal", 
+   "input_format": "ini", 
+   "language": "", 
+   "command": "python ../../../../apps/seqal/seqal.py", 
+   "postprocess": "", 
+   "preprocess": "", 
+   "plots": [], 
+   "assets": [
+      ""
+   ], 
+   "description": "Global and local sequence alignments given two strings using the Needleman-Wunsch and Smith-Waterman algorithms respectively"
+}

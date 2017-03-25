@@ -38,7 +38,7 @@ def finalize(align1, align2):
     for i in range(0,len(align1)):
         # if two AAs are the same, then output the letter
         if align1[i] == align2[i]:                
-            symbol = symbol + align1[i]
+            symbol = symbol + '|'
             identity = identity + 1
             score += match_score(align1[i], align2[i])
     
@@ -59,11 +59,13 @@ def finalize(align1, align2):
     #print mismatch_penalty
     #print gap_penalty
 
-    print 'Identity =', "%3.3f" % identity, 'percent'
+    print
+    print 'Identity =', "%3.1f" % identity, 'percent'
     print 'Score =', score
     print align1
     print symbol
     print align2
+    print
 
 
 def needle(seq1, seq2):
